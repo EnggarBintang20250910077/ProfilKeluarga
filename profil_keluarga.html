@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFIL KELUARGA</title>
+
+    <style>
+        /* Pengaturan halaman */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0761e9, #fff3e0);
+            margin: 0;
+            padding: 30px 15px;
+            color: #333;
+        }
+
+        /* Judul utama */
+        h1 {
+            text-align: center;
+            background: linear-gradient(135deg, #0761e9,#0761e9);
+            color: white;
+            padding: 25px 15px;
+            border-radius: 15px;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: #0761e9;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+
+        /* Judul daftar anggota */
+        #menu {
+            text-align: center;
+            color: #f4f2f2;
+            margin: 30px 0 25px;
+        }
+
+        /* Kotak setiap anggota keluarga */
+        details {
+            max-width: 700px;
+            margin: 15px auto;
+            background-color: white;
+            border: 1px solid #eff1ef;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        details:hover {
+            box-shadow: 0 7px 18px rgba(236, 237, 236, 0.18);
+            transform: translateY(-2px);
+        }
+
+        /* Nama anggota yang bisa diklik */
+        summary {
+            padding: 18px 20px;
+            background-color: #e8f5e9;
+            color:#0761e9;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        summary:hover {
+            background-color: #e6eae6;
+        }
+
+        /* Judul profil */
+        details h2 {
+            text-align: center;
+            color: #0761e9;
+            margin-top: 25px;
+        }
+
+        /* Foto anggota keluarga */
+        details img {
+            display: block;
+            width: 200px;
+            height: 220px;
+            object-fit: cover;
+            margin: 20px auto;
+            border: 4px solid #0761e9;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Informasi anggota keluarga */
+        details p {
+            max-width: 400px;
+            margin: 12px auto;
+            padding: 12px 15px;
+            background-color: #f1f8e9;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        /* Tombol kembali ke menu */
+        details a {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 25px;
+            padding: 11px 20px;
+            background-color:#0761e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        details a:hover {
+            background-color:#0761e9;
+            transform: scale(1.05);
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            summary {
+                font-size: 16px;
+            }
+
+            details img {
+                width: 170px;
+                height: 190px;
+            }
+
+            details p {
+                margin: 12px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PROFIL KELUARGA</h1>
+    <hr>
+
+    <h2 id="menu">DAFTAR ANGGOTA KELUARGA</h2>
+
+    <details>
+        <summary>Ayah</summary>
+
+        <h2>PROFIL Ayah</h2>
+        <img src="potoayah.jpg" alt="Foto Ayah">
+
+        <p>Nama: AYAH</p>
+        <p>Umur: 43 tahun</p>
+        <p>Pekerjaan: WIRAUSAHA</p>
+        <p>Hobi: OLAHRAGA</p>
+
+        <a href="#menu">Kembali ke Menu ↑</a>
+    </details>
+
+    <details>
+        <summary>Ibu</summary>
+
+        <h2>PROFIL Ibu</h2>
+        <img src="potoibu.jpeg" alt="Foto Ibu">
+
+        <p>Nama: IBU</p>
+        <p>Umur: 39 tahun</p>
+        <p>Pekerjaan: WIRAUSAHA</p>
+        <p>Hobi: NONTON TV</p>
+
+        <a href="#menu">Kembali ke Menu ↑</a>
+    </details>
+
+    <details>
+        <summary>Kakak</summary>
+
+        <h2>PROFIL Kakak</h2>
+        <img src="potokaka.jpeg" alt="Foto Kakak">
+
+        <p>Nama: TETEH</p>
+        <p>Umur: 23 tahun</p>
+        <p>Pekerjaan: KARYAWAN</p>
+        <p>Hobi: NONTON DRAKOR</p>
+
+        <a href="#menu">Kembali ke Menu ↑</a>
+    </details>
+
+    <details>
+        <summary>Saya</summary>
+
+        <h2>PROFIL Saya</h2>
+        <img src="potosaya.jpeg" alt="Foto Enggar">
+
+        <p>Nama: ENGGAR BINTANG MAHA PUTRA</p>
+        <p>Umur: 21 tahun</p>
+        <p>Pekerjaan: MAHASISWA</p>
+        <p>Hobi: BILYARD</p>
+
+        <a href="#menu">Kembali ke Menu ↑</a>
+    </details>
+
+    <details>
+        <summary>Adik</summary>
+
+        <h2>PROFIL Adik</h2>
+        <img src="potoadik.jpeg" alt="Foto Adik">
+
+        <p>Nama: ADIK</p>
+        <p>Umur: 6 tahun</p>
+        <p>Pekerjaan: PELAJAR</p>
+        <p>Hobi: MAIN</p>
+
+        <a href="#menu">Kembali ke Menu ↑</a>
+    </details>
+
+</body>
+</html>
